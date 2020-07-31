@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-cursive: 'Alex Brush', cursive;
+  --font-normal: 'Roboto', sans-serif;
+}
+body {
+  background-image: url('ikmal.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.date {
+  padding-top: 120px;
+}
+
+#titulo-banner {
+  position: relative;
+  font-size: 40px;
+  font-family: var(--font-cursive) !important;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.quote {
+  font-size: 25px !important;
+}
+
+#desc-banner {
+  font-family: var(--font-normal);
+  font-size: 20px;
+  position: relative;
+}
+
+#snow {
+  background: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    background-image: url('ikmal3.jpeg');
+  }
+  .banner {
+    display: block;
+  }
+  .date {
+    padding-top: 210px;
+  }
+  #titulo-banner {
+    font-size: 30px;
+  }
+  .happy {
+    font-size: 35px !important;
+    margin-bottom: 20px;
+  }
+  .lovely {
+    margin-top: 50px;
+  }
+  .quote {
+    font-size: 22px !important;
+  }
+}
